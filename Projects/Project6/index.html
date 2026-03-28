@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS Selectors</title>
+    <style>
+        /* Class Selector */
+        .firstdiv {
+            background-color: lightgoldenrodyellow;
+        }
+
+        /* ID Selector */
+        #seconddiv {
+            background-color: lightpink;
+        }
+
+        /* Child Selector */
+        div>p {
+            color: blue;
+            background-color: red;
+        }
+
+        /* Decendant Selector */
+        div span article {
+            color: white;
+            background-color: black;
+
+            /* Universal Selector */
+            * {
+                margin: 25px;
+                padding: 10px;
+                border: 2px solid green;
+                height: 20px;
+                box-sizing: border-box;
+            }
+        }
+
+        /* Pseudo Selectors */
+        a:visited {
+            color: lightcoral;
+        }
+
+        a:link {
+            color: lightgreen;
+        }
+
+        a:active {
+            color: red;
+        }
+
+        a:hover {
+            color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="firstdiv">
+        I am a div element. I am a block-level element that can contain other elements. I am often used to group and
+        style sections of a webpage. With CSS selectors, you can target me and apply various styles to make your webpage
+        look great!
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dicta deleniti odit! Iure, nesciunt ipsa. Quia repudiandae quibusdam soluta quasi cumque aliquam id possimus quos, libero sit voluptates, nulla quidem laboriosam, voluptatibus consectetur. Cumque ipsam dolore sapiente alias numquam nisi debitis tempora ex, accusamus, soluta non? Obcaecati quia sunt iste perspiciatis ut provident dolores aliquid facilis distinctio, fugit inventore esse optio cumque nesciunt vel possimus reiciendis sapiente?</p>
+    </div>
+    <br>
+    <div id="seconddiv">
+        I am another div element. I am a id element.
+        <span>
+            <article>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate nostrum itaque possimus id ex dolorum quos. Quo cum sunt architecto error laudantium enim dolorum assumenda a nam eos, voluptatem consequuntur odit repudiandae quod excepturi vel sed esse aliquid et repellendus corrupti? Provident voluptatum quo ratione? Libero ex iusto aut quidem dolores dicta magnam a repellendus quam adipisci laboriosam fugiat quo beatae facere quod, ad iure saepe quis mollitia! Beatae nulla perferendis accusamus ut inventore, autem, illum quis fugit facilis reiciendis magni? Obcaecati sit tempore consectetur voluptates dolores, fugiat ad?
+            </article>
+        </span>
+    </div>
+    <a href="https://www.codewithharry.com">Visit Code with Harry</a>
+</body>
+
+</html>
